@@ -1,16 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio</title>
+	<meta name="description" content="Roblox systems programmer portfolio.">
+	<title>YourName — Roblox Developer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Your Name</h1>
-	<p>Roblox systems programmer.</p>
+	<div class="glow glow-one"></div>
+	<div class="glow glow-two"></div>
 
-	<h2>Projects</h2>
-	<a href="YOUR_REPOSITORY_LINK">Entity Manager</a>
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Home">
+			<span class="brand-mark"></span>
+			<span>YourName</span>
+		</a>
+
+		<nav aria-label="Main navigation">
+			<a href="#projects">Projects</a>
+			<a href="#about">About</a>
+			<a class="nav-contact" href="mailto:you@example.com">Contact</a>
+		</nav>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="availability"><span></span> Available for work</div>
+			<p class="eyebrow">ROBLOX SYSTEMS PROGRAMMER</p>
+			<h1>I build systems that make games <em>feel better.</em></h1>
+			<p class="hero-copy">Clean, reusable Luau modules for multiplayer Roblox games—built with performance, security, and developer experience in mind.</p>
+			<div class="hero-actions">
+				<a class="button button-primary" href="#projects">View my work <span>↘</span></a>
+				<a class="button button-secondary" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+			</div>
+		</section>
+
+		<section class="stats" aria-label="Highlights">
+			<div><strong>Luau</strong><span>Primary language</span></div>
+			<div><strong>Server-first</strong><span>Secure architecture</span></div>
+			<div><strong>Modular</strong><span>Built to be reused</span></div>
+		</section>
+
+		<section class="section" id="projects">
+			<div class="section-heading">
+				<div><p class="eyebrow">SELECTED WORK</p><h2>Projects</h2></div>
+				<p>Systems made to solve real development problems.</p>
+			</div>
+
+			<div class="project-grid">
+				<article class="project featured">
+					<div class="project-top">
+						<span class="project-number">01</span>
+						<a class="project-link" href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank" rel="noreferrer" aria-label="Open Entity Manager on GitHub">↗</a>
+					</div>
+					<div class="project-visual">
+						<div class="code-window">
+							<div class="window-bar"><i></i><i></i><i></i><span>EntityCreator.luau</span></div>
+							<pre><span class="purple">local</span> Entity = EntityCreator.<span class="blue">Create</span>({
+	Name = <span class="green">"Bandit"</span>,
+	State = <span class="green">"Idle"</span>
+})
+
+Entity:<span class="blue">SetState</span>(<span class="green">"Chase"</span>)</pre>
+						</div>
+					</div>
+					<div class="project-info">
+						<p class="project-type">OPEN SOURCE MODULE</p>
+						<h3>Entity Manager</h3>
+						<p>A configurable entity and state system for Roblox. Create, update, and replicate game entities without tying your code to one genre.</p>
+						<div class="tags"><span>Luau</span><span>State Machines</span><span>Networking</span></div>
+					</div>
+				</article>
+
+				<article class="project project-empty">
+					<div class="project-top"><span class="project-number">02</span></div>
+					<div>
+						<p class="project-type">COMING NEXT</p>
+						<h3>Your next system</h3>
+						<p>Keep this card ready for the next module you build.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section about" id="about">
+			<div>
+				<p class="eyebrow">ABOUT ME</p>
+				<h2>More systems.<br>Less spaghetti.</h2>
+			</div>
+			<div class="about-copy">
+				<p>I’m a Roblox developer focused on the code behind the game: reusable architecture, multiplayer-safe systems, and APIs that are simple for other developers to use.</p>
+				<p>I enjoy turning complicated game logic into focused modules that can drop into different projects.</p>
+				<div class="skills"><span>Luau</span><span>Roblox Studio</span><span>Client / Server</span><span>OOP</span><span>Git</span></div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<p class="eyebrow">LET'S BUILD SOMETHING</p>
+			<h2>Have a project in mind?</h2>
+			<a href="mailto:you@example.com">you@example.com <span>↗</span></a>
+		</section>
+	</main>
+
+	<footer>
+		<span>© <span id="year"></span> YourName</span>
+		<span>Built for Roblox.</span>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
